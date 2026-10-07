@@ -1,0 +1,74 @@
+# ---------------------------------------------
+# Dependencies
+# ---------------------------------------------
+node_modules/
+
+# ---------------------------------------------
+# Build / packaging output (electron-builder, electron-packager)
+# ---------------------------------------------
+dist/
+dist_*/
+build_dist/
+release/
+release_*/
+Sajawal_POS_*_Exe/
+*-win32-x64/
+out/
+
+# Packaged binaries & archives (ship these via releases, not git)
+*.exe
+*.msi
+*.blockmap
+*.asar
+*.zip
+*.7z
+
+# Temporary icon backups created by build-app.js
+build/*.bak
+
+# electron-builder debug files
+builder-debug.yml
+builder-effective-config.yaml
+
+# ---------------------------------------------
+# Logs & runtime files
+# ---------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------------------------------------------
+# Environment / secrets / code-signing
+# ---------------------------------------------
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
+
+# ---------------------------------------------
+# Local data exports / backups (may contain client data)
+# ---------------------------------------------
+*.xlsx
+*.xls
+*.csv
+backups/
+
+# ---------------------------------------------
+# Editors & OS
+# ---------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local AI-tool settings
+.claude/settings.local.json

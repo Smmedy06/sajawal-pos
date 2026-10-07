@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sajawal POS — Beauty & Cosmetics Desktop System</title>
+  
+  <!-- SP Theme Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Google Fonts for Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Offline Bundled Lucide Icons -->
+  <script src="js/vendor/lucide.min.js"></script>
+  
+  <!-- Offline Bundled SheetJS for Excel / CSV Import & Export -->
+  <script src="js/vendor/xlsx.full.min.js"></script>
+  
+  <!-- Offline Bundled Chart.js for smooth sales analytics -->
+  <script src="js/vendor/chart.umd.js"></script>
+
+  <!-- App Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pos-app">
+  <div id="app-root"></div>
+
+  <!-- Thermal Receipt Printable Container -->
+  <div id="thermal-receipt-print" class="thermal-receipt-container"></div>
+
+  <!-- Professional A4 Printable Container -->
+  <div id="a4-invoice-print" class="a4-invoice-container"></div>
+
+  <!-- Custom 6" x 8" Printable Container -->
+  <div id="custom-6x8-invoice-print" class="custom-6x8-invoice-container"></div>
+
+  <!-- App Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/excelImport.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

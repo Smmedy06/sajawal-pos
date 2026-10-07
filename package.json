@@ -1,0 +1,45 @@
+{
+  "name": "sajawal-pos",
+  "version": "1.2.0",
+  "description": "Sajawal POS — Beauty & Cosmetics Desktop Inventory & Billing System",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "node build-app.js"
+  },
+  "build": {
+    "appId": "com.sajawal.pos",
+    "productName": "Sajawal POS",
+    "files": [
+      "css/**/*",
+      "js/**/*",
+      "build/**/*",
+      "index.html",
+      "main.js",
+      "preload.js",
+      "favicon.svg",
+      "package.json"
+    ],
+    "win": {
+      "target": ["nsis", "portable"],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": false
+    }
+  },
+  "keywords": [
+    "pos",
+    "electron",
+    "beauty",
+    "inventory"
+  ],
+  "author": "Sajawal POS",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}
