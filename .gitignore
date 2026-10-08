@@ -72,3 +72,9 @@ desktop.ini
 
 # Local AI-tool settings
 .claude/settings.local.json
+
+# Test output & local databases
+smoke-out/
+*.db
+*.db-wal
+*.db-shm
